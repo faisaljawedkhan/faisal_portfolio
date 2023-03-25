@@ -1,0 +1,54 @@
+
+.navbar-section {
+    padding: 0.2rem 2rem;
+    background: #F7FCFF;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.8rem;
+    /* padding-bottom: 0.8rem; */
+    border-bottom: 1px solid #000000;
+    
+}
+
+.image-section a {
+    text-decoration: none;
+}
+
+.image-section img {
+    width: 45px;
+}
+
+.image-section .name-span {
+    margin-left: 11px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 21px;
+    position: relative;
+    top: 0.25rem;
+}
+
+.navigation-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0.35rem;
+}
+
+.navigation-section ul li {
+    margin: 0 29px;
+}
+
+.navigation-section ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Responsive Navbar Start Here */
