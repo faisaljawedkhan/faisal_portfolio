@@ -51,4 +51,27 @@
     font-weight: 500;
 }
 
+.moveToTopDiv {
+    width: 65px;
+    height: 65px;
+    /* background: rgb(100, 255, 218); */
+    background: #205A56;
+    position: fixed;
+    right: 3rem;
+    bottom: 1.5rem;
+    z-index: 999;
+    opacity: 0.9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.moveToTopDiv i {
+    color: #FFFFFF;
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    
+}
+
 /* Responsive Navbar Start Here */

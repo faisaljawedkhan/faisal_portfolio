@@ -1,7 +1,7 @@
 import React from 'react'
 import "../CSS/Footer.css"
 import { BsGithub, BsLinkedin, BsMedium, BsBook } from "react-icons/bs";
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     function goToTop () {
@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="row justify-content-evenly">
                 <div className="col-md-12 footer-content-social-icon">
                     <div className="footer-left-side">
-                    <h2 onClick={goToTop}><NavLink to={"/"} className="href">FAISAL JAWED KHAN</NavLink></h2>
+                    <h2>FAISAL JAWED KHAN</h2>
                     <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum</p>
                     </div>
                     <div className="footer-right-side">
