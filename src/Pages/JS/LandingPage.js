@@ -50,7 +50,7 @@ const LandingPage = () => {
                                     {
                                         landingPageFeatures.map((item) => (
                                             <div className="col-5 col-sm-4 col-md-4 mb-4 about-me-skills-button">
-                                                <a href="/" className="href"><img src={item.image} alt={item.alt} /></a>
+                                                <img src={item.image} alt={item.alt} />
                                             </div>
                                         ))
                                     }
