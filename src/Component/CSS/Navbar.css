@@ -10,8 +10,12 @@
     align-items: center;
     padding-top: 0.8rem;
     /* padding-bottom: 0.8rem; */
-    border-bottom: 1px solid #000000;
-    
+    border-bottom: 1px solid #000000;   
+}
+
+.image-section {
+    position: absolute;
+    left: 4rem;
 }
 
 .image-section a {
@@ -54,8 +58,6 @@
 .moveToTopDiv {
     width: 65px;
     height: 65px;
-    /* background: rgb(100, 255, 218); */
-    /* background: linear-gradient(90deg, rgba(100,255,218,1) 0%, rgba(32,90,86,1) 35%, rgba(0,0,0,1) 100%); */
     background: linear-gradient(90deg, rgba(100,255,218,1) 0%, rgba(32,90,86,1) 35%);
     position: fixed;
     right: 3rem;
@@ -71,8 +73,87 @@
     font-size: 25px;
     position: absolute;
     top: 20%;
-    left: 30%;
-    
+    left: 30%;    
+}
+
+.toggle-btn-section i {
+    position: absolute;
+    right: 3rem;
+    font-size: 25px;
+    display: none;
 }
 
 /* Responsive Navbar Start Here */
+@media only screen and (max-width: 1027px) {
+    .navigation-section ul li {
+        margin: 0 23px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .navigation-section ul li {
+        margin: 0 20px;
+    }
+    .navigation-section ul li a {
+        font-size: 18px;
+    }
+    .image-section .name-span {
+        font-size: 19px;
+        top: 0.15rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .navigation-section ul li {
+        margin: 0 15px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .navbar-container, .navigation-section ul {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .image-section {
+        position: unset;
+    }
+    .navigation-section ul li {
+        margin: 0.7rem 15px;
+    }
+    .toggle-btn-section i {
+        display: block;
+    }
+    .navigation-section {
+        /* height: 0;
+        overflow: hidden; */
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .navigation-toggle-section {
+        /* height: 16.5rem; */
+        display: block;
+    }
+    .navbar-container {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .toggle-btn-section i {
+        right: 1.5rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .image-section img {
+        width: 39px;
+    }
+    .image-section .name-span {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .toggle-btn-section i {
+        top: 1rem;
+        font-size: 22px;
+    }
+}
+
+/* * {
+    border: 1px solid red;
+} */

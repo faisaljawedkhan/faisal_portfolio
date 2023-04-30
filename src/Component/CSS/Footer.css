@@ -78,3 +78,50 @@
     /* color: #64ffda; */
     cursor: pointer;
 }
+
+/* Responsive Footer Start Here */
+@media only screen and (max-width: 991px) {
+    .footer-left-side p {
+        padding-right: 5rem;
+    }
+    .footer-right-side ul {
+        padding-left: 0rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .footer-left-side p {
+        padding-right: 1rem;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .footer-section {
+        padding: 3rem 2rem 1rem 2rem;
+    }
+    .footer-content-social-icon {
+        flex-direction: column;
+    }
+    .footer-left-side h2 {
+        text-align: center;
+    }
+    .footer-left-side p {
+        padding: 0rem 2rem;
+        text-align: center;
+    }
+    .footer-right-side {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .footer-right-side h4 {
+        text-align: center;
+        transform: translate(0rem, 0);
+    }
+}
+@media only screen and (max-width: 425px) {
+    .footer-left-side p {
+        padding: 0rem 0rem;
+    }
+    .footer-right-side ul li {
+        margin: 0 1rem;
+    }
+}

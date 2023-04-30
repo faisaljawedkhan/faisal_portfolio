@@ -4,7 +4,8 @@ import ProjectsImage1 from "../../Image/Be_My_Wordsmith.webp"
 import ProjectsImage2 from "../../Image/Nexus_ChatApp.webp"
 import ProjectsImage3 from "../../Image/Write_My_Dissertation_For_Me.webp"
 import ProjectsImage4 from "../../Image/Holistic_Learning.webp"
-import { BsBoxArrowUpRight } from "react-icons/bs";
+import { BsBoxArrowUpRight, BsGithub, BsLinkedin, BsMedium, BsBook } from "react-icons/bs";
+import landingPageFeatures from '../../Data/LandingPageFeatures'
 
 const LandingPage = () => {
     return (
@@ -17,6 +18,12 @@ const LandingPage = () => {
                             <h5>Hello World! My name is</h5>
                             <h1>Faisal J Khan</h1>
                             <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+                            <ul>
+                                <li><i><BsGithub /></i></li>
+                                <li><i><BsLinkedin /></i></li>
+                                <li><i><BsMedium /></i></li>
+                                <li><i><BsBook /></i></li>
+                            </ul>
                             <button>Let's talk</button>
                         </div>
                     </div>
@@ -31,45 +38,22 @@ const LandingPage = () => {
                             <h2>ABOUT ME</h2>
                             <div className="below-heading-line"></div>
                         </div>
-                        <div className="col-md-5 about-me-details">
+                        <div className="col-lg-5 about-me-details">
                             <p>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
                             <p>I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming</p>
                             <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
                         </div>
-                        <div className="col-md-5 about-me-skills-section">
+                        <div className="col-lg-5 about-me-skills-section">
                             <h3>My Skills</h3>
                             <div className="container-fluid mt-4">
                                 <div className="row justify-content-around about-me-skills-button-main-div">
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>HTML</button>
-                                    </div>
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>CSS</button>
-                                    </div>
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>JavaScript</button>
-                                    </div>
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>React</button>
-                                    </div>
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>Git</button>
-                                    </div>
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>Github</button>
-                                    </div>
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>SEO</button>
-                                    </div>
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>SASS</button>
-                                    </div>
-                                    <div className="col-md-4 mb-4 about-me-skills-button">
-                                        <button>Bootstrap</button>
-                                    </div>
-                                    <div className="col-md-12 mb-4 about-me-skills-responsive-button">
-                                        <button>Responsive Design</button>
-                                    </div>
+                                    {
+                                        landingPageFeatures.map((item) => (
+                                            <div className="col-5 col-sm-4 col-md-4 mb-4 about-me-skills-button">
+                                                <a href="/" className="href"><img src={item.image} alt={item.alt} /></a>
+                                            </div>
+                                        ))
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -87,10 +71,10 @@ const LandingPage = () => {
                         <div className="col-md-11 projects-section-sub-heading">
                             <h3><span>Some Things I've Built</span></h3>
                         </div>
-                        <div className="col-md-5 pt-4 projects-image-heading">
+                        <div className="col-lg-5 pt-4 projects-image-heading">
                             <img src={ProjectsImage1} alt="Be My Wordsmith" className='img-fluid' />
                         </div>
-                        <div className="col-md-5 pt-4 projects-heading-para">
+                        <div className="col-lg-5 pt-4 projects-heading-para">
                             <h4>Featured Project</h4>
                             <h2>Be My Wordsmith</h2>
                             <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
@@ -99,22 +83,24 @@ const LandingPage = () => {
                             </p>
                             <button><i><BsBoxArrowUpRight /></i></button>
                         </div>
-                        <div className="col-md-5 pt-4 mt-4 projects-heading-para">
-                            <h4>Featured Project</h4>
-                            <h2>Nexus</h2>
-                            <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
-                            <p className='projects-skills-para'>
-                                <span>JSX</span> <span>CSS</span> <span>React JS</span> <span>Bootstrap</span> <span>React Router</span>
-                            </p>
-                            <button><i><BsBoxArrowUpRight /></i></button>
+                        <div className="nexusProject">
+                            <div className="col-lg-5 pt-4 mt-4 projects-heading-para">
+                                <h4>Featured Project</h4>
+                                <h2>Nexus</h2>
+                                <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
+                                <p className='projects-skills-para'>
+                                    <span>JSX</span> <span>CSS</span> <span>React JS</span> <span>Bootstrap</span> <span>React Router</span>
+                                </p>
+                                <button><i><BsBoxArrowUpRight /></i></button>
+                            </div>
+                            <div className="col-lg-5 pt-4 mt-4 projects-image-heading">
+                                <img src={ProjectsImage2} alt="Nexus" className='img-fluid' />
+                            </div>
                         </div>
-                        <div className="col-md-5 pt-4 mt-4 projects-image-heading">
-                            <img src={ProjectsImage2} alt="Nexus" className='img-fluid' />
-                        </div>
-                        <div className="col-md-5 pt-4 mt-4 projects-image-heading">
+                        <div className="col-lg-5 pt-4 mt-4 projects-image-heading">
                             <img src={ProjectsImage3} alt="Write My Dissertation for me" className='img-fluid' />
                         </div>
-                        <div className="col-md-5 pt-4 mt-4 projects-heading-para">
+                        <div className="col-lg-5 pt-4 mt-4 projects-heading-para">
                             <h4>Featured Project</h4>
                             <h2>Write My Dissertation for me</h2>
                             <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
@@ -123,17 +109,19 @@ const LandingPage = () => {
                             </p>
                             <button><i><BsBoxArrowUpRight /></i></button>
                         </div>
-                        <div className="col-md-5 pt-4 mt-4 projects-heading-para">
-                            <h4>Featured Project</h4>
-                            <h2>Holistic Learning</h2>
-                            <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
-                            <p className='projects-skills-para'>
-                                <span>JSX</span> <span>CSS</span> <span>React JS</span> <span>Bootstrap</span> <span>React Router</span>
-                            </p>
-                            <button><i><BsBoxArrowUpRight /></i></button>
-                        </div>
-                        <div className="col-md-5 pt-4 mt-4 projects-image-heading">
-                            <img src={ProjectsImage4} alt="Holistic Learning" className='img-fluid' />
+                        <div className="holisticLearning">
+                            <div className="col-lg-5 pt-4 mt-4 projects-heading-para">
+                                <h4>Featured Project</h4>
+                                <h2>Holistic Learning</h2>
+                                <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
+                                <p className='projects-skills-para'>
+                                    <span>JSX</span> <span>CSS</span> <span>React JS</span> <span>Bootstrap</span> <span>React Router</span>
+                                </p>
+                                <button><i><BsBoxArrowUpRight /></i></button>
+                            </div>
+                            <div className="col-lg-5 pt-4 mt-4 projects-image-heading">
+                                <img src={ProjectsImage4} alt="Holistic Learning" className='img-fluid' />
+                            </div>
                         </div>
                         {/* <div className="col-md-11 projects-section-sub-heading-last">
                             <h3><span>Other Noteworthy Projects</span></h3>

@@ -1,7 +1,7 @@
 
 /* Banner Section Start Here */
 .banner-section {
-    padding: 7.9rem 0;
+    padding: 6rem 0;
 }
 
 .banner-heading-para {
@@ -45,6 +45,32 @@
     font-weight: 700;
     font-size: 22px;
 }
+
+.banner-heading-para ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0.5rem 0 1.5rem 0;
+}
+
+.banner-heading-para ul li {
+    margin: 0 2rem;
+    color: #000000;
+    /* width: 45px;
+    height: 45px;
+    border: 2px solid #000000;
+    border-radius: 50%; */
+    font-size: 29px;
+    cursor: pointer;
+}
+
+/* .banner-heading-para ul li i {
+    position: relative;
+    top: 3%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+} */
 
 /* About Me Section Start Here */
 .about-me-section, .contacts-section {
@@ -95,22 +121,15 @@
     line-height: 39px;
 }
 
-.about-me-skills-button button, .about-me-skills-responsive-button button {
-    background: #205A56;
-    border-radius: 11px;
-    border: none;
-    outline: none;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 20px;
+.about-me-skills-button img {
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    width: 87px;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.about-me-skills-button button {
-    padding: 0.5rem 1.5rem;
-}
-
-.about-me-skills-responsive-button button {
-    padding: 0.5rem 2rem;
+.about-me-skills-button :hover {
+    transform: scale(1.2) translateZ(0px);
 }
 
 /* Projects Section Start Here */
@@ -191,6 +210,12 @@
 .projects-heading-para i {
     position: relative;
     top: -2px;
+}
+
+.nexusProject, .holisticLearning {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
  
 /* Resume Section Start Here */
@@ -289,4 +314,74 @@
     display: flex;
     margin: auto;
     margin-top: 2.5rem;
+}
+
+/* Responsive Page Code Start Here */
+@media only screen and (max-width: 991px) {
+    .banner-section {
+        padding: 2rem 0;
+    }
+    .banner-heading-para p {
+        padding: 0 1rem;
+    }
+    .banner-heading-para h1 {
+        font-size: 53px;
+    }
+    .contacts-form-div {
+        padding: 0 1rem;
+    }
+    .about-me-section, .contacts-section {
+        padding: 5.5rem 2rem;
+    }
+    .about-me-skills-button {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me-skills-section h3, .projects-heading-para h4, .projects-heading-para h2, .projects-heading-para p {
+        text-align: center;
+    }
+    .projects-section {
+        padding: 5.5rem 2rem 3rem 2rem;
+    }
+    .projects-heading-para button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+    .projects-image-heading img {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .nexusProject, .holisticLearning {
+        flex-direction: column-reverse;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .resume-section {
+        padding: 3rem 2rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .banner-heading-para p {
+        font-size: 19px;
+    }
+    .banner-heading-para h1 {
+        font-size: 47px;
+    }
+    .banner-heading-para ul li {
+        margin: 0 1.2rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .banner-heading-para h1 {
+        font-size: 41px;
+    }
 }
