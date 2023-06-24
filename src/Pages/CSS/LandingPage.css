@@ -34,6 +34,10 @@
     color: #787878;
 }
 
+.banner-heading-para a {
+    text-decoration: none;
+}
+
 .banner-heading-para button, .contacts-form-inner-div button {
     background: #205A56;
     box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);

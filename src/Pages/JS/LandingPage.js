@@ -25,7 +25,7 @@ const LandingPage = () => {
                                 <li onClick={() => window.open("https://faisalthermaltech.medium.com/")}><i><BsMedium /></i></li>
                                 <li onClick={() => window.open("https://dev.to/faisaljawedkhan")}><i><BsBook /></i></li>
                             </ul>
-                            <button>Let's talk</button>
+                            <a href="#contacts-section" className="href"><button>Let's talk</button></a>
                         </div>
                     </div>
                 </div>
