@@ -178,7 +178,8 @@ const LandingPage = () => {
                             <div className="below-heading-line"></div>
                         </div>
                         <div className="col-md-8 contacts-form-div">
-                            <form action="">
+                            <form name='contact-us-form' method="post" enctype="multipart/form-data" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" onSubmit="submit">
+                            <input type="hidden" name='form-name' value="contact-us-form" />
                                 <div className="mb-3 contacts-form-inner-div">
                                     <label htmlFor="name" className="form-label">Name</label>
                                     <input type="text" className="form-control" name="name" id="name" />
