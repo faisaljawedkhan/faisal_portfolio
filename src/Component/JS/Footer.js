@@ -15,21 +15,21 @@ const Footer = () => {
                 <div className="col-md-12 footer-content-social-icon">
                     <div className="footer-left-side">
                     <h2>FAISAL JAWED KHAN</h2>
-                    <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum</p>
+                    <p>A Passionate Front-end Web Developer crafting user-friendly websites.</p>
                     </div>
                     <div className="footer-right-side">
                     <h4>SOCIAL</h4>
                     <ul>
-                        <li><i><BsGithub /></i></li>
-                        <li><i><BsLinkedin /></i></li>
-                        <li><i><BsMedium /></i></li>
-                        <li><i><BsBook /></i></li>
+                        <li onClick={() => window.open("https://github.com/faisaljawedkhan?tab=repositories")}><i><BsGithub /></i></li>
+                        <li onClick={() => window.open("linkedin.com/in/faisal-jawed-khan-8486b9157")}><i><BsLinkedin /></i></li>
+                        <li onClick={() => window.open("https://faisalthermaltech.medium.com/")}><i><BsMedium /></i></li>
+                        <li onClick={() => window.open("https://dev.to/faisaljawedkhan")}><i><BsBook /></i></li>
                     </ul>
                     </div>
                 </div>
                 <div className="col-md-12 footer-copyright-section">
                     <p>&copy; Copyright 2023, Built by <span className='personName' onClick={goToTop}>Faisal Jawed Khan</span></p>
-                    <p className='design-para'>Designed by <span className='personName'>Aparna Panda</span></p>
+                    {/* <p className='design-para'>Designed by <span className='personName'>Aparna Panda</span></p> */}
                 </div>
             </div>
         </div>

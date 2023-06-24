@@ -17,12 +17,13 @@ const LandingPage = () => {
                         <div className="col-md-12 banner-heading-para">
                             <h5>Hello World! My name is</h5>
                             <h1>Faisal J Khan</h1>
-                            <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+                            {/* <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p> */}
+                            <p>A passionate Front-end Web Developer, with a love for creating immersive web experiences. I strive to build user-friendly, visually stunning websites that leave a lasting impact.</p>
                             <ul>
-                                <li><i><BsGithub /></i></li>
-                                <li><i><BsLinkedin /></i></li>
-                                <li><i><BsMedium /></i></li>
-                                <li><i><BsBook /></i></li>
+                                <li onClick={() => window.open("https://github.com/faisaljawedkhan?tab=repositories")}><i><BsGithub /></i></li>
+                                <li onClick={() => window.open("linkedin.com/in/faisal-jawed-khan-8486b9157")}><i><BsLinkedin /></i></li>
+                                <li onClick={() => window.open("https://faisalthermaltech.medium.com/")}><i><BsMedium /></i></li>
+                                <li onClick={() => window.open("https://dev.to/faisaljawedkhan")}><i><BsBook /></i></li>
                             </ul>
                             <button>Let's talk</button>
                         </div>
@@ -39,8 +40,9 @@ const LandingPage = () => {
                             <div className="below-heading-line"></div>
                         </div>
                         <div className="col-lg-5 about-me-details">
-                            <p>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
-                            <p>I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming</p>
+                            <p>Welcome to my portfolio website, a goal-driven Front-end Web Developer based in India with a creative mindset and a strong passion for learning and innovating.</p>
+                            <p>Currently, I am employed as a Frontend Developer at Holistic Learning, where I actively contribute to the development of cutting-edge software solutions. In addition, I find joy in sharing my insights and experiences through blogging on platforms like Medium and the dev community.</p>
+                            <p>I also actively engage with the developer community on platforms like LinkedIn, Feel free to Connect or <span onClick={() => window.open("linkedin.com/in/faisal-jawed-khan-8486b9157")}><b>Follow me on my Linkedin</b></span>, where I regularly share coding-related content, tips, and insights.</p>
                             <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
                         </div>
                         <div className="col-lg-5 about-me-skills-section">
@@ -147,20 +149,20 @@ const LandingPage = () => {
                         <div className="col-md-12 resume-details">
                             <div className="company-details">
                                 <h2>Work Experience</h2>
-                                <h3>Company name</h3>
+                                <h3>Holistic Learning</h3>
                                 <div className="work-details">
-                                    <h3>Jan 2020</h3>
-                                    <h4>Frontend Developer</h4>
-                                    <p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                                    <h3>Jan 2020 - Till Now</h3>
+                                    <h4>Front-end Developer</h4>
+                                    <p>I can create websites using React JS and handle their wordpress website also.</p>
                                 </div>
                             </div>
                             <div className="education-details">
                                 <h3>Education</h3>
                                 <div className="education-passed-date">
-                                    <h4>Jan 2019</h4>
-                                    <p>M.tech in Mechanical Engineering</p>
-                                    <h4>Jan 2019</h4>
-                                    <p>B.tech in Mechanical Engineering</p>
+                                    <h4>Nov 2020</h4>
+                                    <p>M.Tech in Mechanical Engineering</p>
+                                    <h4>May 2014</h4>
+                                    <p>B.Tech in Mechanical Engineering</p>
                                 </div>
                             </div>
                         </div>

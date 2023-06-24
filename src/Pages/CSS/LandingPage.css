@@ -106,6 +106,12 @@
     text-align: justify;
 }
 
+.about-me-details p span {
+    border-bottom: 2px solid #787878;
+    cursor: pointer;
+    color: #205A56;
+}
+
 .about-me-skills-button-main-div {
     display: flex;
     justify-content: space-around;
