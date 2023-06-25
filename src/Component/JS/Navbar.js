@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import "../CSS/Navbar.css"
 import NavIcon from "../../Image/Navbar_Icon.png"
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaAlignJustify } from "react-icons/fa";
 
 const Navbar = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <li><a href="#projects-section" className="href">Projects</a></li>
                     <li><a href="#resume-heading-section" className="href">Resume</a></li>
                     <li><a href="#contacts-section" className="href">Contact</a></li>
-                    <li><a href="/" className="href">Blogs</a></li>
+                    <li><Link to="https://dev.to/faisaljawedkhan" target="_blank" rel="noopener noreferrer" className="href">Blogs</Link></li>
                 </ul>
             </div>
             </div>

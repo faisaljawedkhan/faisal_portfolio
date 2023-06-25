@@ -139,6 +139,9 @@
     .toggle-btn-section i {
         right: 1.5rem;
     }
+    .navbar-container {
+        border-bottom: none;
+    }
 }
 @media only screen and (max-width: 375px) {
     .image-section img {

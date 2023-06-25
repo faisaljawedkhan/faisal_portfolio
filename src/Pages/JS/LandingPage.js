@@ -6,6 +6,7 @@ import ProjectsImage3 from "../../Image/Write_My_Dissertation_For_Me.webp"
 import ProjectsImage4 from "../../Image/Holistic_Learning.webp"
 import { BsBoxArrowUpRight, BsGithub, BsLinkedin, BsMedium, BsBook } from "react-icons/bs";
 import landingPageFeatures from '../../Data/LandingPageFeatures'
+import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
     return (
@@ -20,10 +21,10 @@ const LandingPage = () => {
                             {/* <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p> */}
                             <p>A passionate Front-end Web Developer, with a love for creating immersive web experiences. I strive to build user-friendly, visually stunning websites that leave a lasting impact.</p>
                             <ul>
-                                <li onClick={() => window.open("https://github.com/faisaljawedkhan?tab=repositories")}><i><BsGithub /></i></li>
-                                <li onClick={() => window.open("linkedin.com/in/faisal-jawed-khan-8486b9157")}><i><BsLinkedin /></i></li>
-                                <li onClick={() => window.open("https://faisalthermaltech.medium.com/")}><i><BsMedium /></i></li>
-                                <li onClick={() => window.open("https://dev.to/faisaljawedkhan")}><i><BsBook /></i></li>
+                                <li><Link to="https://github.com/faisaljawedkhan?tab=repositories" target="_blank" rel="noopener noreferrer"><i><BsGithub /></i></Link></li>
+                                <li><Link to="https://www.linkedin.com/in/faisal-jawed-khan-8486b9157/" target="_blank" rel="noopener noreferrer"><i><BsLinkedin /></i></Link></li>
+                                <li><Link to="https://faisalthermaltech.medium.com/" target="_blank" rel="noopener noreferrer"><i><BsMedium /></i></Link></li>
+                                <li><Link to="https://dev.to/faisaljawedkhan" target="_blank" rel="noopener noreferrer"><i><BsBook /></i></Link></li>
                             </ul>
                             <a href="#contacts-section" className="href"><button>Let's talk</button></a>
                         </div>
@@ -40,10 +41,10 @@ const LandingPage = () => {
                             <div className="below-heading-line"></div>
                         </div>
                         <div className="col-lg-5 about-me-details">
-                            <p>Welcome to my portfolio website, a goal-driven Front-end Web Developer based in India with a creative mindset and a strong passion for learning and innovating.</p>
-                            <p>Currently, I am employed as a Frontend Developer at Holistic Learning, where I actively contribute to the development of cutting-edge software solutions. In addition, I find joy in sharing my insights and experiences through blogging on platforms like Medium and the dev community.</p>
-                            <p>I also actively engage with the developer community on platforms like LinkedIn, Feel free to Connect or <span onClick={() => window.open("linkedin.com/in/faisal-jawed-khan-8486b9157")}><b>Follow me on my Linkedin</b></span>, where I regularly share coding-related content, tips, and insights.</p>
-                            <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+                            <p>Welcome to my portfolio website, a goal-driven <span className='font-bold'>Front-end Web Developer</span> based in India with a creative mindset and a strong passion for learning and innovating. Check out some of my work in the <span className='font-bold'>Projects</span> section.</p>
+                            <p>Currently, I am employed as a Frontend Developer at <span className='social-link'><Link to="https://www.holisitclearning.com/" target="_blank" rel="noopener noreferrer">Holistic Learning</Link></span>, where I actively contribute to the development of cutting-edge software solutions. In addition, I find joy in sharing my insights and experiences through blogging on platforms like <span className="font-bold">Medium</span> and the <span className="font-bold">dev community</span>.</p>
+                            <p>I also actively engage with the developer community on platforms like <span className="font-bold">LinkedIn</span>, Feel free to Connect or <span className='social-link'><Link to="https://www.linkedin.com/in/faisal-jawed-khan-8486b9157/" target="_blank" rel="noopener noreferrer">Follow me on my Linkedin</Link></span>, where I regularly share coding-related content, tips, and insights.</p>
+                            <p>I'm open to <span className="font-bold">Job opportunities</span> where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
                         </div>
                         <div className="col-lg-5 about-me-skills-section">
                             <h3>My Skills</h3>
@@ -79,21 +80,21 @@ const LandingPage = () => {
                         <div className="col-lg-5 pt-4 projects-heading-para">
                             <h4>Featured Project</h4>
                             <h2>Be My Wordsmith</h2>
-                            <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
+                            <p className='projects-para'>I build Be My Wordsmith's website from scratch using frontend tools I am familiar with. They are a content writing company.</p>
                             <p className='projects-skills-para'>
                                 <span>JSX</span> <span>CSS</span> <span>React JS</span> <span>Bootstrap</span> <span>React Router</span>
                             </p>
-                            <button><i><BsBoxArrowUpRight /></i></button>
+                            <Link to="https://www.bemywordsmith.com/" target="_blank" rel="noopener noreferrer"><button><i><BsBoxArrowUpRight /></i></button></Link>
                         </div>
                         <div className="nexusProject">
                             <div className="col-lg-5 pt-4 mt-4 projects-heading-para">
                                 <h4>Featured Project</h4>
                                 <h2>Nexus</h2>
-                                <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
+                                <p className='projects-para'>This is the company's official website, which I created from scratch for the chat application Nexus.</p>
                                 <p className='projects-skills-para'>
                                     <span>JSX</span> <span>CSS</span> <span>React JS</span> <span>Bootstrap</span> <span>React Router</span>
                                 </p>
-                                <button><i><BsBoxArrowUpRight /></i></button>
+                                <Link to="https://www.nexuschatapp.com/" target="_blank" rel="noopener noreferrer"><button><i><BsBoxArrowUpRight /></i></button></Link>
                             </div>
                             <div className="col-lg-5 pt-4 mt-4 projects-image-heading">
                                 <img src={ProjectsImage2} alt="Nexus" className='img-fluid' />
@@ -105,21 +106,21 @@ const LandingPage = () => {
                         <div className="col-lg-5 pt-4 mt-4 projects-heading-para">
                             <h4>Featured Project</h4>
                             <h2>Write My Dissertation for me</h2>
-                            <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
+                            <p className='projects-para'>React JS, Bootstrap, and other frontend tools I am familiar with were used to build the website, Write my dissertation for me, a company that provides dissertation writing services.</p>
                             <p className='projects-skills-para'>
                                 <span>JSX</span> <span>CSS</span> <span>React JS</span> <span>Bootstrap</span> <span>React Router</span>
                             </p>
-                            <button><i><BsBoxArrowUpRight /></i></button>
+                            <Link to="https://www.writemydissertationforme.com/" target="_blank" rel="noopener noreferrer"><button><i><BsBoxArrowUpRight /></i></button></Link>
                         </div>
                         <div className="holisticLearning">
                             <div className="col-lg-5 pt-4 mt-4 projects-heading-para">
                                 <h4>Featured Project</h4>
                                 <h2>Holistic Learning</h2>
-                                <p className='projects-para'>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora .</p>
+                                <p className='projects-para'>Holistic Learning is a company’s portfolio website and create their website from scratch using React JS and other frontend tools I know.</p>
                                 <p className='projects-skills-para'>
                                     <span>JSX</span> <span>CSS</span> <span>React JS</span> <span>Bootstrap</span> <span>React Router</span>
                                 </p>
-                                <button><i><BsBoxArrowUpRight /></i></button>
+                                <Link to="https://www.holisitclearning.com/" target="_blank" rel="noopener noreferrer"><button><i><BsBoxArrowUpRight /></i></button></Link>
                             </div>
                             <div className="col-lg-5 pt-4 mt-4 projects-image-heading">
                                 <img src={ProjectsImage4} alt="Holistic Learning" className='img-fluid' />
@@ -151,9 +152,17 @@ const LandingPage = () => {
                                 <h2>Work Experience</h2>
                                 <h3>Holistic Learning</h3>
                                 <div className="work-details">
-                                    <h3>Jan 2020 - Till Now</h3>
+                                    <h3>Jan 2022 - Till Now</h3>
                                     <h4>Front-end Developer</h4>
-                                    <p>I can create websites using React JS and handle their wordpress website also.</p>
+                                    <p>
+                                        <ul>
+                                            <li>Responsible for creating their websites from scratch</li>
+                                            <li>Maintain their one of the website’s backends, which is created on WordPress</li>
+                                            <li>Responsible for handling c-panel and other website’s backend problems</li>
+                                            <li>Ensuring web design is optimized for smartphones</li>
+                                            <li>Optimizing web pages for maximum speed and scalability</li>
+                                        </ul>
+                                    </p>
                                 </div>
                             </div>
                             <div className="education-details">
@@ -179,7 +188,7 @@ const LandingPage = () => {
                         </div>
                         <div className="col-md-8 contacts-form-div">
                             <form name='contact-us-form' method="post" enctype="multipart/form-data" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" onSubmit="submit">
-                            <input type="hidden" name='form-name' value="contact-us-form" />
+                                <input type="hidden" name='form-name' value="contact-us-form" />
                                 <div className="mb-3 contacts-form-inner-div">
                                     <label htmlFor="name" className="form-label">Name</label>
                                     <input type="text" className="form-control" name="name" id="name" />

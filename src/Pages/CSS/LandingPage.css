@@ -60,7 +60,6 @@
 
 .banner-heading-para ul li {
     margin: 0 2rem;
-    color: #000000;
     /* width: 45px;
     height: 45px;
     border: 2px solid #000000;
@@ -69,12 +68,9 @@
     cursor: pointer;
 }
 
-/* .banner-heading-para ul li i {
-    position: relative;
-    top: 3%;
-    left: 22%;
-    transform: translate(-50%, -50%);
-} */
+.banner-heading-para ul li a {
+    color: #000000;
+}
 
 /* About Me Section Start Here */
 .about-me-section, .contacts-section {
@@ -110,9 +106,19 @@
     text-align: justify;
 }
 
-.about-me-details p span {
+.about-me-details p .font-bold {
+    color: #205A56;
+    font-weight: 600;
+}
+
+.about-me-details p .social-link {
     border-bottom: 2px solid #787878;
+    font-weight: 600;
     cursor: pointer;
+}
+
+.about-me-details p .social-link a {
+    text-decoration: none;
     color: #205A56;
 }
 
@@ -269,6 +275,10 @@
     line-height: 31px;
     text-align: left;
     color: #FFFFFF;
+}
+
+.company-details p ul li {
+    margin: 0.7rem 0;
 }
 
 .work-details {
