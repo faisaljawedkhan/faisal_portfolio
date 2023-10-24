@@ -32,10 +32,10 @@ const Navbar = () => {
             </div>
             <div className="navigation-section" ref={toggleSection} onClick={reachSection}>
                 <ul>
-                    <li><a href="#about-me-section" className="href">About</a></li>
-                    <li><a href="#projects-section" className="href">Projects</a></li>
-                    <li><a href="#resume-heading-section" className="href">Services</a></li>
-                    <li><a href="#contacts-section" className="href">Contact</a></li>
+                    <li><a href="#about-us" className="href">About</a></li>
+                    <li><a href="#projects" className="href">Projects</a></li>
+                    <li><a href="#sercies-we-provide" className="href">Services</a></li>
+                    <li><a href="#contact-us" className="href">Contact</a></li>
                     <li><Link to="https://dev.to/faisaljawedkhan" target="_blank" rel="noopener noreferrer" className="href">Blogs</Link></li>
                 </ul>
             </div>

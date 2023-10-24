@@ -35,7 +35,7 @@ const LandingPage = () => {
             </section>
 
             {/* About Me Section Start Here */}
-            <section className="about-me-section" id='about-me-section'>
+            <section className="about-me-section" id='about-us'>
                 <div className="container-fluid">
                     <div className="row justify-content-evenly">
                         <div className="col-md-10 about-me-heading">
@@ -66,7 +66,7 @@ const LandingPage = () => {
                 </div>
             </section>
             {/* Projects Section Start Here */}
-            <section className="projects-section" id="projects-section">
+            <section className="projects-section" id="projects">
                 <div className="container-fluid">
                     <div className="row justify-content-evenly">
                         <div className="col-md-12 projects-section-heading">
@@ -136,7 +136,7 @@ const LandingPage = () => {
             </section>
 
             {/* Resume Section Start Here */}
-            <section className="resume-heading-section" id="resume-heading-section">
+            <section className="resume-heading-section" id="sercies-we-provide">
                 <div className="container resume-section-inner-div">
                     <div className="row justify-content-center">
                         <div className="col-md-12 resume-heading">
@@ -207,7 +207,7 @@ const LandingPage = () => {
                 </div>
             </section> */}
             {/* Contacts Section Start Here */}
-            <section className="contacts-section" id="contacts-section">
+            <section className="contacts-section" id="contact-us">
                 <div className="container">
                     <div className="row justify-content-evenly">
                         <div className="col-md-10 contacts-heading">
