@@ -4,6 +4,8 @@ import ProjectsImage1 from "../../Image/Be_My_Wordsmith.webp"
 import ProjectsImage2 from "../../Image/Nexus_ChatApp.webp"
 import ProjectsImage3 from "../../Image/Write_My_Dissertation_For_Me.webp"
 import ProjectsImage4 from "../../Image/Holistic_Learning.webp"
+import WebsiteD from "../../Image/Website_Development.webp"
+import DigitalM from "../../Image/Digital_Marketing.webp"
 import { BsBoxArrowUpRight, BsGithub, BsLinkedin, BsMedium, BsBook } from "react-icons/bs";
 import landingPageFeatures from '../../Data/LandingPageFeatures'
 import { Link } from 'react-router-dom'
@@ -138,13 +140,39 @@ const LandingPage = () => {
                 <div className="container resume-section-inner-div">
                     <div className="row justify-content-center">
                         <div className="col-md-12 resume-heading">
-                            <h2>RESUME</h2>
+                            <h2>SERVICES WE PROVIDE</h2>
                             <div className="below-heading-line"></div>
                         </div>
                     </div>
                 </div>
             </section>
             <section className="resume-section">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-md-6 website-development">
+                            <div className="website-d-inner-div">
+                                <img src={WebsiteD} alt="Website Development Services" className='img-fluid' />
+                                <div className="card-body website-d-para">
+                                    <p className='main-para'>Ready to have your very own website without the hassle? We make it easy! We create beautiful websites that work perfectly. You don't need to worry about technical stuff like domains or hosting - we handle it all. Your dream website is just a click away.</p>
+                                    <p className='second-para'>🌐 Discover the possibilities with us!</p>
+                                    <button><a href="#contacts-section" className="href">Let's talk</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 digital-marketing">
+                        <div className="digital-m-inner-div">
+                                <img src={DigitalM} alt="Digital Marketing Services" className='img-fluid' />
+                                <div className="card-body digital-m-para">
+                                    <p className='main-para'>Want more people to know about your business? That's what we do best. We help your brand grow online and get more customers. Let's make your business stand out on the internet. Your journey to success begins here.</p>
+                                    <p className='second-para'>🚀 Boost your online presence now!</p>
+                                    <button><a href="#contacts-section" className="href">Let's talk</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* <section className="resume-section">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-12 resume-details">
@@ -177,7 +205,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* Contacts Section Start Here */}
             <section className="contacts-section" id="contacts-section">
                 <div className="container">

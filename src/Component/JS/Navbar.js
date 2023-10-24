@@ -34,7 +34,7 @@ const Navbar = () => {
                 <ul>
                     <li><a href="#about-me-section" className="href">About</a></li>
                     <li><a href="#projects-section" className="href">Projects</a></li>
-                    <li><a href="#resume-heading-section" className="href">Resume</a></li>
+                    <li><a href="#resume-heading-section" className="href">Services</a></li>
                     <li><a href="#contacts-section" className="href">Contact</a></li>
                     <li><Link to="https://dev.to/faisaljawedkhan" target="_blank" rel="noopener noreferrer" className="href">Blogs</Link></li>
                 </ul>
