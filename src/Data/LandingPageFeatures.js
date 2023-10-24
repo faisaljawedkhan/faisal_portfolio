@@ -46,6 +46,10 @@ const landingPageFeatures = [
     {
         image : require("../Image/Features/12.png"),
         alt : "Responsive Design"
+    },
+    {
+        image : require("../Image/Features/13.png"),
+        alt : "Wordpress"
     }
 ];
 
