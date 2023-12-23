@@ -153,6 +153,7 @@ const LandingPage = () => {
                             <div className="website-d-inner-div">
                                 <img src={WebsiteD} alt="Website Development Services" className='img-fluid' />
                                 <div className="card-body website-d-para">
+                                    <h2>Web Development</h2>
                                     <p className='main-para'>Ready to have your very own website without the hassle? We make it easy! We create beautiful websites that work perfectly. You don't need to worry about technical stuff like domains or hosting - we handle it all. Your dream website is just a click away.</p>
                                     <p className='second-para'>🌐 Discover the possibilities with us!</p>
                                     <button><a href="#contacts-section" className="href">Let's talk</a></button>
@@ -163,6 +164,7 @@ const LandingPage = () => {
                         <div className="digital-m-inner-div">
                                 <img src={DigitalM} alt="Digital Marketing Services" className='img-fluid' />
                                 <div className="card-body digital-m-para">
+                                    <h2>Digital Marketing</h2>
                                     <p className='main-para'>Want more people to know about your business? That's what we do best. We help your brand grow online and get more customers. Let's make your business stand out on the internet. Your journey to success begins here.</p>
                                     <p className='second-para'>🚀 Boost your online presence now!</p>
                                     <button><a href="#contacts-section" className="href">Let's talk</a></button>

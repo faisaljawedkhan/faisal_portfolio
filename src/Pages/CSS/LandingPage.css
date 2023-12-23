@@ -184,7 +184,7 @@
     color: #000000;
 }
 
-.projects-heading-para h2 {
+.projects-heading-para h2, .website-d-para h2, .digital-m-para h2 {
     color: #000000;
     text-align: justify;
     font-weight: 600;
@@ -309,6 +309,11 @@
 
 .website-d-para, .digital-m-para {
     padding: 2rem 1rem;
+}
+
+
+.website-d-para h2, .digital-m-para h2 {
+    font-size: 29px;
 }
 
 /* .website-d-para .main-para, .digital-m-para .main-para {
